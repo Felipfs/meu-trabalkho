@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Ultramaq</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo Ultramaq">
+            <p>Peças e Assistência Técnica</p>
+        </div>
+        <div class="login-box">
+            <div class="login-icon">
+                <img src="img/login-icon.png" alt="User Icon">
+            </div>
+            <h2>Login</h2>
+            <!-- Formulário envia dados ao arquivo login.php -->
+            <form id="loginForm" action="login.php" method="POST">
+                <input type="text" name="login" placeholder="Login" required>
+                <input type="password" name="senha" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <p>Se não tiver conta, <a href="cadastro.html">cadastre-se</a></p>
+        </div>
+    </div>
+</body>
+</html>
